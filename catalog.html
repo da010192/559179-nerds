@@ -20,8 +20,6 @@
         <ul class="user-navigation">
           <li class="basket">Корзина</li>
         </ul>
-        <img src="img/cart-icon.svg" width="15" height="15"
-         alt="Корзина">
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
@@ -32,8 +30,12 @@
         <!--Здесь будет форма-->
       </section>
       <section class="sort">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
-        <!--Здесь будет форма-->
+        <h2>Сортировать</h2>
+        <ul class="sort-list">
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по названию</a></li>
+        </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список готовых товаров</h2>
@@ -42,25 +44,61 @@
             <img src="img/img-sedona.jpg" width="364" height="605"
             alt="Информационный сайт для туристов «SEDONA»">
           </li>
+          <li class="hidden-block">
+            <h3>sedona</h3>
+            <p>Информационный сайт<br>
+               для туристов</p>
+            <a class="button" href="#">9900 руб.</a>
+          </li>
           <li class="catalog-item">
             <img src="img/img-pink.jpg" width="364" height="605"
             alt="Продуктовый лендинг приложения для IOS и Android  «PINK»">
+          </li>
+          <li class="hidden-block">
+            <h3>pink</h3>
+            <p>Продуктовый лендинг<br>
+               приложения для IOS и Android</p>
+            <a class="button" href="#">9900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="img/img-barbershop.jpg" width="364" height="605"
             alt="Сайт салонов красоты для мужчин «BARBERSHOP»">
           </li>
+          <li class="hidden-block">
+            <h3>barbershop</h3>
+            <p>Сайт салоны красоты.<br>
+               Для мужчин, да.</p>
+            <a class="button" href="#">9900 руб.</a>
+          </li>
           <li class="catalog-item">
             <img src="img/img-mishka.jpg" width="364" height="605"
             alt="Интернет магазин вязаных игрушек «MISHKA»">
+          </li>
+          <li class="hidden-block">
+            <h3>mishka</h3>
+            <p>Интернет магазин<br>
+               вязаных игрушек</p>
+            <a class="button" href="#">9900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="img/img-aplus.jpg" width="364" height="605"
             alt="Лендинг курсов повышения квалификации «A PLUS»">
           </li>
+          <li class="hidden-block">
+            <h3>a plus</h3>
+            <p>Лендинг курсов повышения<br>
+               квалификации</p>
+            <a class="button" href="#">9900 руб.</a>
+          </li>
           <li class="catalog-item">
             <img src="img/img-kvast.jpg" width="364" height="605"
             alt="Промо-сайт производителя крафтового кваса «КВАСТ»">
+          </li>
+          <li class="hidden-block">
+            <h3>кваст</h3>
+            <p>Промо-сайт производителя<br>
+               крафтового кваса</p>
+            <a class="button" href="#">9900 руб.</a>
           </li>
         </ul>
       </section>
@@ -79,7 +117,7 @@
          <a class="footer-map"><img src="img/map.jpg"
          width="1440" height="416" alt="Map"></a>
          <div class="contacts">
-            <h2>NЁRDS DESIGN STUDIO</h2>
+            <h2>nёrds design studio</h2>
             <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7(812)275-75-75</p>
@@ -88,21 +126,9 @@
       </section>
       <div class="footer-social">
         <ul>
-           <li>
-             <a class="social-button" href="#">
-               <img src="img/vk-icon.svg" width="73" height="73" alt="VK">
-             </a>
-           </li>
-           <li>
-             <a class="social-button" href="#">
-               <img src="img/fb-icon.svg" width="73" height="73" alt="Fb">
-             </a>
-           </li>
-           <li>
-             <a class="social-button" href="#">
-               <img src="img/insta-icon.svg" width="73" height="73" alt="Instagram">
-             </a>
-           </li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -113,48 +139,6 @@
       <p>Ваше имя:</p>
       <p>Ваш e-mail:</p>
       <p>Текст письма:</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«SEDONA»</h2>
-      <p>Информационный сайт<br>
-         для туристов</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«PINK»</h2>
-      <p>Продуктовый лендинг<br>
-        приложения для IOS и Android</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«BARBERSHOP»</h2>
-      <p>Сайт салоны красоты <br>
-        Для мужчин, да</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«MISHKA»</h2>
-      <p>Интернет магазин<br>
-         вязаных игрушек</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«A PLUS»</h2>
-      <p>Лендинг курсов повышения<br>
-         квалификации</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    <section class="modal-item">
-      <h2>«КВАСТ»</h2>
-      <p>Промо-сайт производителя<br>
-        крафтового кваса</p>
       <!-- Здесь будет форма -->
       <span class="modal-close">x</span>
     </section>
