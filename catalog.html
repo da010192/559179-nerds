@@ -18,7 +18,9 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket">Корзина</li>
+          <li class="basket">
+            <a class="basket" href="shop.html">Корзина</a>
+          </li>
         </ul>
       </nav>
       <h1>Магазин готовых шаблонов</h1>
@@ -28,6 +30,68 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="price-list">
+            <legend>стоимость:</legend>
+            <p>
+              <input type="range" id="price-item" name="price" min="0" max="20000"
+              value="15000">
+            </p>
+            <p>
+              <label for="min-price">от</label>
+              <input type="text" name="min-price" id="min-price" value="0">
+              <label for="max-price">до</label>
+              <input type="text" name="min-price" id="max-price" value="15000">
+            </p>
+          </fieldset>
+          <fieldset class="grid">
+            <legend>сетка:</legend>
+            <p>
+              <input type="radio" name="grid-adaptive" id="grid-adaptive"
+              value="grid-adaptive" checked>
+              <label for="grid-adaptive">Адаптивная</label>
+            </p>
+            <p>
+              <input type="radio" name="grid-fixed" id="grid-fixed"
+              value="grid-fixed">
+              <label for="grid-fixed">Фиксированная</label>
+            </p>
+            <p>
+              <input type="radio" name="grid-rubber" id="grid-rubber"
+              value="grid-rubber">
+              <label for="grid-rubber">Резиновая</label>
+            </p>
+          </fieldset>
+          <fieldset class="other-properties">
+            <legend>особенности:</legend>
+            <p>
+              <input type="checkbox" name="properties-slider" id="slider"
+              value="slider" checked>
+              <label for="slider">Слайдер</label>
+            </p>
+            <p>
+              <input type="checkbox" name="properties-advantages" id="advantages"
+              value="block advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </p>
+            <p>
+              <input type="checkbox" name="properties-news" id="news"
+              value="news" checked>
+              <label for="news">Новости</label>
+            </p>
+            <p>
+              <input type="checkbox" name="properties-gallery" id="gallery"
+              value="gallery">
+              <label for="gallery">Галерея</label>
+            </p>
+            <p>
+              <input type="checkbox" name="properties-basket" id="basket"
+              value="basket">
+              <label for="basket">Корзина</label>
+            </p>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2>Сортировать</h2>
@@ -136,11 +200,23 @@
     </footer>
     <section class="modal modal-connect">
       <h2>Напишите нам</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-name">ваше имя:</label><br>
+          <input class="feedback-name" type="text" id="feedback-name"
+          name="name" placeholder="Имя Фамилия"><br>
+          <label for="feedback-mail">ваш e-mail:</label><br>
+          <input class="feedback-mail" type="text" id="feedback-mail"
+          name="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feedback-comments">текст письма:</label><br>
+          <textarea id="feedback-comments" name="comments" rows="5"
+          placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
