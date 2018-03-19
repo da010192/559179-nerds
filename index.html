@@ -18,10 +18,23 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket">Корзина</li>
+          <li class="basket">
+            <a class="basket" href="shop.html">Корзина</a>
+          </li>
         </ul>
       </nav>
       <section class="slider">
+        <ul class="slider-switches">
+          <li class="slide-radio">
+            <button class="slide-btn">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">Третий слайд</button>
+          </li>
+        </ul>
         <ul class="slider-list">
           <li class="slider-item">
              <h2>Долго,дорого,скурпулёзно.</h2>
@@ -150,11 +163,23 @@
     </footer>
     <section class="modal modal-connect">
       <h2>Напишите нам</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-name">ваше имя:</label><br>
+          <input class="feedback-name" type="text" id="feedback-name"
+          name="name" placeholder="Имя Фамилия"><br>
+          <label for="feedback-mail">ваш e-mail:</label><br>
+          <input class="feedback-mail" type="text" id="feedback-mail"
+          name="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feedback-comments">текст письма:</label><br>
+          <textarea id="feedback-comments" name="comments" rows="5"
+          placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
