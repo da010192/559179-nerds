@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  position: absolute;
+}
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation-inex-current a {
+ text-decoration: underline;
+ text-decoration-color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.slider-switches,
+.slider-item,
+.advantages-item,
+.studio-list,
+.footer-social-list,
+.sort-list,
+.catalog-item,
+.page-navigation-list {
+  list-style: none;
+}
+.slider-list {
+  background-color: #eeeeee;
+}
+h2,
+legend {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+}
+.slider-item h2,
+.visually-h1 h1{
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 55px;
+  line-height: 1;
+}
+.modal.modal-connect h2 {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 45px;
+  line-height: 1;
+}
+.advantages-item h3 {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+}
+.studio-desctiption h3,
+.studio-advantages h3 {
+  font-family: "Roboto Bold", Arial, sans-serif;
+}
+.studio-desctiption b {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 45px;
+  line-height: 1;
+
+}
+.footer-social b {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+}
+.studio-item span{
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 45px;
+  line-height: 1;
+}
+.contacts {
+  text-align: left;
+  background-color: #ffffff;
+}
+.button {
+  font: inherit;
+
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #d7373b;
+}
+.button.catalog-btn:active {
+  color: #ffffff;
+}
+.button.btn-2 {
+  background-color: #00ca74;
+}
+.button.btn-2:hover,
+.button.btn-2:focus {
+  background-color: #00bc6c;
+}
+.button.btn-2:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #00aa62;
+}
+.button.btn-3 {
+  background-color: #efc84a;
+}
+.button.btn-3:hover,
+.button.btn-3:focus {
+  background-color: #eab534;
+}
+.button.btn-3:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #e5a722;
+}
+.feedback label {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+.feedback input,
+.feedback textarea {
+  border: 2px solid #d7dcde;
+}
+.feedback input:hover,
+.feedback textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+.feedback input:focus,
+.feedback textarea:focus {
+  border: 2px solid #000000;
+}
+.feedback input:invalid,
+.feedback textarea:invalid {
+  color: #e74246;
+  border: 2px solid #e74246;
+}
+.visually-h1{
+  text-align: center;
+  background-color: #eeeeee;
+}
+.filter fieldset {
+  border: none;
+}
+.price-list p:nth-of-type(1),
+input:nth-of-type(1):not(.modal.modal-connect),
+input:nth-of-type(2):not(.modal.modal-connect) {
+  background-color: #eeeeee;
+}
+.filter-button.button,
+.page-navigation a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+.filter-button.button:hover,
+.page-navigation a:hover {
+  color: #000000;
+  background-color: #dfdfdf;
+}
+.filter-button.button:active,
+.page-navigation a:active {
+  color: rgba(0, 0, 0, 0.302);
+  background-color: #d5d5d5;
+}
+
+.sort-list a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.302);
+}
+.sort-list a:hover {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sort-list a:active {
+  font-size: 14px;
+  color: #000000;
+}
+.site-navigation-current a {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+}
